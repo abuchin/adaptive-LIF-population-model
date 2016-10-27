@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2007.10.24 01:35:31.406.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\CheckNeuronO\Frequency_wx.pas=</Transaction>
+    <Transaction>2007.10.24 17:02:02.375.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\CheckNeuronO\Frequency_wx.pas=</Transaction>
+    <Transaction>2007.11.02 19:22:35.937.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\CheckNeuronO\Unit2.pas=C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\HH_Buchin.pas</Transaction>
+    <Transaction>2007.11.02 19:28:58.609.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\CheckNeuronO\Unit2.pas=C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\AHPO_fr.pas</Transaction>
+    <Transaction>2007.11.02 19:46:07.687.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\CheckNeuronO\Unit2.pas=C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Buchin_KMO.pas</Transaction>
+    <Transaction>2007.11.16 19:31:06.578.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Unit7.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:07.265.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Unit4.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:07.843.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Threshold.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:08.328.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Volt.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:08.781.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Dens.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:08.937.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\mathMy.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:09.265.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\init.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:09.890.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\EEG.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:19.187.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Hodgkin.pas=</Transaction>
+    <Transaction>2007.11.16 19:31:28.515.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\HH_canal.pas=</Transaction>
+    <Transaction>2007.11.16 19:34:53.187.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\BP2Delphi.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:12.625.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\coeff.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:16.671.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Correspond.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:21.093.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\DDSpinEdit.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:24.046.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\exp_nu_Pyr.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:26.859.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\graph_0d.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:28.859.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\graph_2D.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:30.484.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\HH_canal.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:32.125.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\HH_Chow.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:33.656.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\HH_Lyle.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:35.125.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\HH_Migli.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:36.781.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Hodgkin.pas=</Transaction>
+    <Transaction>2007.11.16 19:35:40.187.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\key.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:12.625.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Noise.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:14.812.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\other.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:16.406.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\other_2D.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:19.296.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\phase_old.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:21.921.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Dens.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:23.593.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Dens_old.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:25.250.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Volt.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:26.765.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Representatives.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:28.593.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\RingModel.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:30.640.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\run.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:32.265.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\SimplestRing.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:34.500.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\simplex.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:36.265.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Slice.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:38.281.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\slice_2D.pas=</Transaction>
+    <Transaction>2007.11.16 19:36:40.375.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Statistics.pas=</Transaction>
+    <Transaction>2007.11.16 19:37:11.468.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Threshold.pas=</Transaction>
+    <Transaction>2007.11.16 19:57:26.453.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Threshold.pas=</Transaction>
+    <Transaction>2007.11.16 20:08:03.015.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Dens.pas=</Transaction>
+    <Transaction>2007.11.16 20:54:53.015.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Volt.pas=</Transaction>
+    <Transaction>2007.11.16 21:19:27.453.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\ph_Dens.pas=</Transaction>
+    <Transaction>2007.11.16 21:19:35.312.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\_ObjectsOfNeuron1\Brain units\Threshold.pas=</Transaction>
+    <Transaction>2008.01.18 15:30:20.109.pas,C:\Documents and Settings\Администратор\Мои документы\Наука\Programming\adaptive population model\Threshold.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

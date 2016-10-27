@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{5DFF079E-63CA-4A72-83B5-B83E3973F325}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="Project2.exe">Project2.bdsproj</Projects>
+      <Projects Name="pckWork.bpl">D:\Programs\Delphi\v1.1\New\pckWork.bdsproj</Projects>
+      <Projects Name="Targets">Project2.exe pckWork.bpl</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

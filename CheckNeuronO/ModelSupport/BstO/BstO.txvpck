@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="mj4jt21er_v">
+    <property name="$name" value="BstO" />
+    <property name="$defaultDiagram" value="True" />
+    <property name="$metaclass" value="Package Diagram" />
+  </view>
+</nodeSet>

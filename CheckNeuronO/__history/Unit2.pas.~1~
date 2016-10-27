@@ -1,0 +1,320 @@
+unit Unit2;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, TeEngine, Series, ExtCtrls, TeeProcs, Chart,
+  typeNrnPars, NeuronO, CreateNrnO, SetNrnPars, Spin, Koshhax, MathMyo, Init;
+
+type
+   mas=array[0..100000] of double;
+  TForm2 = class(TForm)
+    Button1: TButton;
+    SpinEdit1: TSpinEdit;
+    Label1: TLabel;
+    SpinEdit2: TSpinEdit;
+    Label2: TLabel;
+    SpinEdit3: TSpinEdit;
+    Label3: TLabel;
+    SpinEdit4: TSpinEdit;
+    Label4: TLabel;
+    SpinEdit5: TSpinEdit;
+    Label5: TLabel;
+    SpinEdit6: TSpinEdit;
+    Label6: TLabel;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    Button3: TButton;
+    Chart2: TChart;
+    LineSeries1: TLineSeries;
+    SpinEdit7: TSpinEdit;
+    Label7: TLabel;
+    Series2: TLineSeries;
+    SpinEdit8: TSpinEdit;
+    SpinEdit9: TSpinEdit;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    SpinEdit10: TSpinEdit;
+    Label11: TLabel;
+    SpinEdit11: TSpinEdit;
+    Label12: TLabel;
+    SpinEdit12: TSpinEdit;
+    Label13: TLabel;
+    SpinEdit13: TSpinEdit;
+    Label14: TLabel;
+    SpinEdit14: TSpinEdit;
+    RadioGroup1: TRadioGroup;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    SpinEdit15: TSpinEdit;
+    Label15: TLabel;
+    Series1: TLineSeries;
+    Series3: TLineSeries;
+
+    procedure Button3Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+  ANrn_LIF  :TNeuron;
+  NP    :NeuronProperties;
+  nu,nuu,Ia, dI, I, w, n, tau_w, w_inf, tau_n, n_inf, tau_1AHP, tau_1M,
+  U, C, tau, step,d, U1, U2:   double;
+
+implementation
+
+uses unit1,EEG;
+{$R *.dfm}
+
+function f(var nu,I:double):double;   {nonlinear part}
+var norm_n, norm_w:double;
+begin
+
+{if form2.RadioButton2.Checked then
+begin}
+ norm_n:=Max_K( 1/tau_1M,1/(tau_n*1000) );
+ norm_w:=Max_K( 1/tau_1AHP,1/(tau_w*1000) );
+ w:=( w_inf + nu/1000*Xi/norm_w )/(nu/1000*Xi/norm_w + 1);     {first order approximation}
+ n:=( n_inf + nu/1000*Zi/norm_n )/(nu/1000*Zi/norm_n + 1);
+//end;
+
+{if form2.RadioButton1.Checked then
+begin
+
+New_m2(1/tau_1M,1/(tau_n*1000),dt*1000,
+1/tau_1M/(tau_n*1000)*(n_inf*Max_K(1/tau_1M,1/(tau_n*1000)) + nu*(1-n)*Zi*tau_n),
+n, U1 );
+
+New_m2(1/tau_1AHP,1/(tau_w*1000),dt*1000,
+1/tau_1AHP/(tau_w*1000)*(w_inf*Max_K(1/tau_1AHP,1/(tau_w*1000)) + nu*(1-w)*Xi*tau_w),
+w, U2 );
+
+end;
+}
+ANrn_LIF.NV.V:=(I + ANrn_LIF.np.gAHP*w*ANrn_LIF.np.VKDr + ANrn_LIF.np.gKM*n*n*ANrn_LIF.np.VKM +
+ANrn_LIF.NP.gL*ANrn_LIF.NP.VL)/(ANrn_LIF.np.gAHP*w + ANrn_LIF.np.gL + ANrn_LIF.np.gKM*n*n);
+
+U:=ANrn_LIF.NV.V*1000;
+f:=steady_rate (U,w,n);
+end;
+
+function f_derivate(var nu,delta,I:double):double;
+var
+ s,y,z:double;
+begin
+s:=nu + delta;
+y:=f(s,I);
+z:=f(nu,I);
+f_derivate:=( y-z{f(s,I) - f(nu,I)} )/ delta;
+  {form2.Series2.AddXY(nu, y);
+  form2.Series3.AddXY(nu, z); }
+
+end;
+
+
+
+procedure TForm2.Button1Click(Sender: TObject);      //Data for RD model
+var
+curr, freq:double;
+h:integer;
+ begin
+
+ curr:=0; freq:=0;
+
+if form2.RadioButton1.Checked then
+begin
+assignfile(aaa,'v(Iind)_AHP_sgm2.dat'); reset(aaa);
+   h:=-1;
+   repeat h:=h+1;
+   readln(aaa,curr,freq);
+   Form2.Series2.AddXY( {10000*}curr{/(ANrn_LIF.NP.Square*1e9)}, freq);
+   until curr>=form2.spinedit1.value;
+     closefile(aaa);
+end;
+
+
+if form2.RadioButton2.Checked then
+begin
+assignfile(qqq,'v(Iind)_KM_sgm2.dat'); reset(qqq);
+   h:=-1;
+   repeat h:=h+1;
+   readln(qqq,curr,freq);
+   Form2.Series1.AddXY( {10000*}curr{/(ANrn_LIF.NP.Square*1e9)}, freq);
+   until curr>=form2.spinedit1.value;
+     closefile(qqq);
+end;
+
+
+if form2.RadioButton3.Checked then
+begin
+assignfile(ccc,'AHP+M final frequency.dat'); reset(ccc);
+   h:=-1;
+   repeat h:=h+1;
+   readln(ccc,curr,freq);
+   Form2.Series3.AddXY( {10000*}curr{/(ANrn_LIF.NP.Square*1e9)}, freq);
+   until curr>=form2.spinedit1.value;
+     closefile(ccc);
+end;
+
+
+
+ end;
+
+ { // Newton method
+ nu:=0;
+
+  tau_w:= 374/1000;
+  w_inf:=0.04444;
+   tau_n:= 59.1/1000;
+   n_inf:= 0.00934;
+   step:=form2.SpinEdit2.Value;
+
+  NP.HH_type:='Lyle';
+  NP.HH_order:='1-point';
+  HodgkinPhysParameters(NP);
+  CreateNeuronByTypeO(NP, ANrn_LIF);
+
+//Parameters for LIF neuron with or without M & AHP current
+ ANrn_LIF.NP.gNa:=0;
+ ANrn_LIF.NP.gK:=0;
+ ANrn_LIF.NP.gKA:=0;
+ ANrn_LIF.NP.gKD:=0;
+ ANrn_LIF.NP.gH:=0;
+ ANrn_LIF.NP.gAHP:=0;
+ ANrn_LIF.NP.gKM:=0;
+ Xi:=0.018;
+ Zi:=0.175;
+
+ANrn_LIF.InitialConditions;
+
+   Ia:=form2.spinedit1.value/(ANrn_LIF.NP.Square*1e9);
+   dI:=Ia/step;
+
+form2.Series1.clear;
+I:=-dI;
+
+REPEAT I:=I + dI;
+ repeat
+nuu:=nu;
+  nu:=f(nu,I);
+ until abs(nuu-nu)<=0.1;
+
+form2.Series1.AddXY (I*1000,nu);
+application.processmessages;
+UNTIL I>=Ia;
+ANrn_LIF.Free;
+}
+
+
+
+
+procedure TForm2.Button3Click(Sender: TObject);  {Solving by Newton Method}
+var
+V_rest_AHP, V_rest_M, aa, bb:double;
+BEGIN
+
+nu:=3;          {area of alteration Ia}
+step:=form2.SpinEdit2.Value;
+
+  NP.HH_type:='Lyle';
+  NP.HH_order:='1-point';
+  HodgkinPhysParameters(NP);
+  CreateNeuronByTypeO(NP, ANrn_LIF);
+
+{Parameters for LIF neuron with or without M & AHP current}
+ ANrn_LIF.NP.gNa:=0;
+ ANrn_LIF.NP.gK:=0;
+ ANrn_LIF.NP.gKA:=0;
+ ANrn_LIF.NP.gKD:=0;
+ ANrn_LIF.NP.gH:=0;
+
+ if form2.CheckBox1.Checked then ANrn_LIF.NP.gAHP:=0.6
+                            else ANrn_LIF.NP.gAHP:=0;
+
+if form2.CheckBox2.Checked then ANrn_LIF.NP.gKM:=0.76
+                            else ANrn_LIF.NP.gKM:=0;
+
+ANrn_LIF.InitialConditions;
+
+Ia:=form2.spinedit1.value/(ANrn_LIF.NP.Square*1e9);
+dI:=Ia/step;
+
+form2.LineSeries1.clear;
+form2.Series1.clear;
+form2.Series2.clear;
+form2.Series3.clear;
+
+I:=-dI;
+d:=form2.SpinEdit7.Value/10;
+
+Xi:=form2.SpinEdit12.Value/1000;
+Zi:=form2.SpinEdit13.Value/1000;
+
+U1:=0;
+U2:=0;
+
+V_rest_M:=form2.SpinEdit14.Value/10;
+V_rest_AHP:=form2.SpinEdit15.Value/10;
+
+{parameters for AHP-current}
+
+tau_w:= (400*5/(3.3*dexp((V_rest_AHP+35)/20)+dexp(-(V_rest_AHP+35)/20)) )/1000;
+//tau_w:=form2.SpinEdit10.Value/1000;
+tau_1AHP:=form2.spinedit8.value/10;
+w_inf:= {0.0444;}  1 / (1+dexp(-(V_rest_AHP +35)/10));  {w_inf:=w_inf(Vrest=-65.7}
+
+{parameters for M-current}
+
+aa:=0.003*dexp( (V_rest_M+45)*0.135);
+bb:=0.003*dexp(-(V_rest_M+45)*0.135);
+tau_n:= (1 / (aa + bb) + 8)/1000;
+//tau_n:=form2.SpinEdit10.Value/10/1000;
+n_inf:= {0.00934;} aa / (aa + bb);   {n_inf:=n_inf(Vrest=-65.7}
+tau_1M:=form2.spinedit9.value/10;
+
+   dt:=0.0001;
+
+n:=n_inf;
+w:=w_inf;
+
+
+ //assignfile(qqq,'I_FR_AHP+M.dat'); rewrite (qqq);
+
+REPEAT I:=I + dI;
+//I:=Ia;
+repeat
+ { repeat nu:=nu + 0.1;}
+   nuu:=nu;
+   nu:= nu - (nu-f(nu,I))/(1-f_derivate(nu,d,I));
+   {nuu:=f(nu,I);
+   form2.LineSeries1.AddXY (nu,nuu);
+   form2.Series2.AddXY (nu,nu);
+ application.ProcessMessages;}
+ until  abs(nuu - nu)<=0.01;
+//until nu>=100;
+ form2.LineSeries1.AddXY (I*(ANrn_LIF.NP.Square*1e9),nu);
+//form2.Series2.AddXY (I*(ANrn_LIF.NP.Square*1e9),w);
+//form2.Series3.AddXY (I*(ANrn_LIF.NP.Square*1e9),n);
+//form2.Series4.AddXY (I*(ANrn_LIF.NP.Square*1e9),ANrn_LIF.NV.V*1000);
+ //writeln(qqq,I*(ANrn_LIF.NP.Square*1e9):10:3, ' ', nu:10:3);
+// writeln(qqq,I*(ANrn_LIF.NP.Square*1e9):10:3, ' ', nu:10:3);
+// form2.Series2.AddXY (I*1000, n);
+
+ application.ProcessMessages;
+UNTIL I>=Ia;
+//closefile(qqq);
+
+ANrn_LIF.Free;
+END;
+
+
+end.

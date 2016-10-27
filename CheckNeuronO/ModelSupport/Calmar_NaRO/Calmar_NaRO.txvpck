@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="0l52ssu0p_v">
+    <property name="$name" value="Calmar_NaRO" />
+    <property name="$defaultDiagram" value="True" />
+    <property name="$metaclass" value="Package Diagram" />
+  </view>
+</nodeSet>

@@ -1,0 +1,1722 @@
+object Form1: TForm1
+  Left = 51
+  Top = 475
+  Width = 1045
+  Height = 756
+  AutoSize = True
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 599
+    Top = 519
+    Width = 39
+    Height = 16
+    Caption = 'Ia, pA'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 584
+    Top = 663
+    Width = 32
+    Height = 16
+    Caption = 't, ms'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 781
+    Top = 167
+    Width = 38
+    Height = 16
+    Caption = 'Xi e-3'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Label5: TLabel
+    Left = 909
+    Top = 167
+    Width = 44
+    Height = 16
+    Caption = 'Ksi e-3'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Label6: TLabel
+    Left = 357
+    Top = 335
+    Width = 76
+    Height = 16
+    Caption = 'V tr, mv*10'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 357
+    Top = 366
+    Width = 81
+    Height = 16
+    Caption = 'sigma_v, mV'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 357
+    Top = 271
+    Width = 83
+    Height = 16
+    Caption = 'V reset, mkV'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 605
+    Top = 211
+    Width = 88
+    Height = 16
+    Caption = 'Vrest, mV*10'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 757
+    Top = 103
+    Width = 53
+    Height = 16
+    Caption = 'tau AHP'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Label8: TLabel
+    Left = 893
+    Top = 103
+    Width = 61
+    Height = 16
+    Caption = 'tau M*10'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Label9: TLabel
+    Left = 901
+    Top = 135
+    Width = 49
+    Height = 16
+    Caption = 'tau_1M'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Label11: TLabel
+    Left = 749
+    Top = 135
+    Width = 65
+    Height = 16
+    Caption = 'tau_1AHP'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Label14: TLabel
+    Left = 357
+    Top = 214
+    Width = 88
+    Height = 16
+    Caption = 'Vrest, mV*10'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label15: TLabel
+    Left = 357
+    Top = 241
+    Width = 72
+    Height = 16
+    Caption = 'tau, ms*10'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label16: TLabel
+    Left = 357
+    Top = 300
+    Width = 53
+    Height = 16
+    Caption = 'S, cm^2'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label17: TLabel
+    Left = 536
+    Top = 8
+    Width = 95
+    Height = 19
+    Caption = 'Lyle neuron'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label18: TLabel
+    Left = 352
+    Top = 8
+    Width = 145
+    Height = 19
+    Caption = 'Frequency neuron'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label19: TLabel
+    Left = 605
+    Top = 241
+    Width = 72
+    Height = 16
+    Caption = 'tau, ms*10'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label20: TLabel
+    Left = 605
+    Top = 271
+    Width = 83
+    Height = 16
+    Caption = 'V reset, mkV'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label21: TLabel
+    Left = 605
+    Top = 300
+    Width = 53
+    Height = 16
+    Caption = 'S, cm^2'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label22: TLabel
+    Left = 535
+    Top = 551
+    Width = 97
+    Height = 16
+    Caption = 'noise-to-signal'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 543
+    Top = 615
+    Width = 95
+    Height = 16
+    Caption = 'modulation, Hz'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label23: TLabel
+    Left = 543
+    Top = 583
+    Width = 97
+    Height = 16
+    Caption = 'correlation, ms'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label24: TLabel
+    Left = 527
+    Top = 487
+    Width = 111
+    Height = 16
+    Caption = 'modulation A, pA'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Chart1: TChart
+    Left = 0
+    Top = 0
+    Width = 332
+    Height = 184
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'Lyle neuron')
+    BottomAxis.Title.Caption = 'ms'
+    BottomAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    BottomAxis.Title.Font.Color = clBlack
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Tahoma'
+    BottomAxis.Title.Font.Style = [fsBold]
+    LeftAxis.Title.Caption = 'mV'
+    LeftAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    LeftAxis.Title.Font.Color = clBlack
+    LeftAxis.Title.Font.Height = -13
+    LeftAxis.Title.Font.Name = 'Tahoma'
+    LeftAxis.Title.Font.Style = [fsBold]
+    Legend.Visible = False
+    View3D = False
+    TabOrder = 0
+    object Series1: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loNone
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 653
+    Top = 512
+    Width = 52
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 1
+    Value = 150
+  end
+  object SpinEdit2: TSpinEdit
+    Left = 645
+    Top = 656
+    Width = 63
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    Increment = 100
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 2
+    Value = 500
+  end
+  object Chart5: TChart
+    Left = 0
+    Top = 184
+    Width = 332
+    Height = 177
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'Frequency neuron')
+    BottomAxis.Title.Caption = 'ms'
+    BottomAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    BottomAxis.Title.Font.Color = clBlack
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Tahoma'
+    BottomAxis.Title.Font.Style = [fsBold]
+    LeftAxis.Title.Caption = 'mV'
+    LeftAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    LeftAxis.Title.Font.Color = clBlack
+    LeftAxis.Title.Font.Height = -13
+    LeftAxis.Title.Font.Name = 'Tahoma'
+    LeftAxis.Title.Font.Style = [fsBold]
+    Legend.Visible = False
+    View3D = False
+    TabOrder = 3
+    object RadioButton7: TRadioButton
+      Left = 8
+      Top = 0
+      Width = 65
+      Height = 17
+      Caption = 'No Thr'
+      Checked = True
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      TabStop = True
+    end
+    object RadioButton8: TRadioButton
+      Left = 264
+      Top = 0
+      Width = 65
+      Height = 17
+      Caption = 'Thr'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+    end
+    object CheckBox29: TCheckBox
+      Left = 8
+      Top = 152
+      Width = 137
+      Height = 17
+      Caption = 'show Experiment'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+    end
+    object LineSeries4: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      Title = 'LIF model potential'
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loNone
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series12: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clBlue
+      Title = 'Mainen potential'
+      Pointer.HorizSize = 1
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.VertSize = 1
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object SpinEdit3: TSpinEdit
+    Left = 962
+    Top = 160
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 4
+    Value = 175
+    Visible = False
+  end
+  object SpinEdit4: TSpinEdit
+    Left = 826
+    Top = 160
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 5
+    Value = 18
+    Visible = False
+  end
+  object CheckBox1: TCheckBox
+    Left = 360
+    Top = 152
+    Width = 105
+    Height = 17
+    Caption = 'AHP current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+  end
+  object CheckBox2: TCheckBox
+    Left = 360
+    Top = 176
+    Width = 89
+    Height = 17
+    Caption = 'M current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+  end
+  object CheckBox3: TCheckBox
+    Left = 544
+    Top = 152
+    Width = 100
+    Height = 17
+    Caption = 'AHP current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+  end
+  object CheckBox4: TCheckBox
+    Left = 544
+    Top = 176
+    Width = 97
+    Height = 17
+    Caption = 'M current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Chart6: TChart
+    Left = 722
+    Top = 333
+    Width = 313
+    Height = 113
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'w Lyle')
+    BottomAxis.Title.Caption = 'ms'
+    Legend.Visible = False
+    View3D = False
+    TabOrder = 10
+    Visible = False
+    object LineSeries5: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loNone
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series10: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clGreen
+      Title = 't_inf'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object CheckBox5: TCheckBox
+    Left = 360
+    Top = 56
+    Width = 97
+    Height = 17
+    Caption = 'Na current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+  end
+  object SpinEdit13: TSpinEdit
+    Left = 466
+    Top = 264
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 12
+    Value = 0
+  end
+  object Chart8: TChart
+    Left = 0
+    Top = 368
+    Width = 333
+    Height = 161
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'Input or Experiment')
+    BottomAxis.Title.Caption = 'ms'
+    BottomAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    BottomAxis.Title.Font.Color = clBlack
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Tahoma'
+    BottomAxis.Title.Font.Style = [fsBold]
+    LeftAxis.AxisValuesFormat = '#,##0,###'
+    LeftAxis.ExactDateTime = False
+    LeftAxis.Title.Caption = 'pA'
+    LeftAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    LeftAxis.Title.Font.Color = clBlack
+    LeftAxis.Title.Font.Height = -13
+    LeftAxis.Title.Font.Name = 'Tahoma'
+    LeftAxis.Title.Font.Style = [fsBold]
+    Legend.Alignment = laBottom
+    Legend.TextStyle = ltsPlain
+    Legend.Visible = False
+    RightAxis.Title.Caption = 'mV'
+    RightAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    RightAxis.Title.Font.Color = clBlack
+    RightAxis.Title.Font.Height = -13
+    RightAxis.Title.Font.Name = 'Tahoma'
+    RightAxis.Title.Font.Style = [fsBold]
+    View3D = False
+    TabOrder = 13
+    object CheckBox30: TCheckBox
+      Left = 0
+      Top = 136
+      Width = 97
+      Height = 17
+      Caption = 'show input'
+      Checked = True
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Series3: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      PercentFormat = '##0,## %'
+      SeriesColor = clRed
+      Title = 'input'
+      ValueFormat = '#,##0,###'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series8: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      PercentFormat = '##0,## %'
+      SeriesColor = clGreen
+      Title = 'Mainen potential'
+      ValueFormat = '#,##0,###'
+      VertAxis = aRightAxis
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object CheckBox8: TCheckBox
+    Left = 544
+    Top = 56
+    Width = 89
+    Height = 17
+    Caption = 'Na current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 14
+  end
+  object Chart9: TChart
+    Left = 3
+    Top = 536
+    Width = 382
+    Height = 193
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'population frequency')
+    BottomAxis.Title.Caption = 'ms'
+    BottomAxis.Title.Font.Charset = DEFAULT_CHARSET
+    BottomAxis.Title.Font.Color = clBlack
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Arial'
+    BottomAxis.Title.Font.Style = [fsBold]
+    LeftAxis.Title.Caption = 'Hz'
+    LeftAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    LeftAxis.Title.Font.Color = clBlack
+    LeftAxis.Title.Font.Height = -13
+    LeftAxis.Title.Font.Name = 'Tahoma'
+    LeftAxis.Title.Font.Style = [fsBold]
+    Legend.Alignment = laBottom
+    Legend.TextStyle = ltsPlain
+    Legend.Visible = False
+    RightAxis.Title.Caption = 'pA'
+    RightAxis.Title.Font.Charset = RUSSIAN_CHARSET
+    RightAxis.Title.Font.Color = clBlack
+    RightAxis.Title.Font.Height = -13
+    RightAxis.Title.Font.Name = 'Tahoma'
+    RightAxis.Title.Font.Style = [fsBold]
+    View3D = False
+    TabOrder = 15
+    object CheckBox32: TCheckBox
+      Left = 0
+      Top = 168
+      Width = 97
+      Height = 17
+      Caption = 'show input'
+      Checked = True
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Series5: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clGreen
+      Title = 'model frequency, Hz'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series7: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clLime
+      Title = 'input, pA'
+      VertAxis = aRightAxis
+      Pointer.HorizSize = 1
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.VertSize = 1
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series2: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object CheckBox11: TCheckBox
+    Left = 360
+    Top = 104
+    Width = 97
+    Height = 17
+    Caption = 'H current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 16
+  end
+  object CheckBox12: TCheckBox
+    Left = 360
+    Top = 80
+    Width = 97
+    Height = 17
+    Caption = 'Ka current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 17
+  end
+  object CheckBox13: TCheckBox
+    Left = 360
+    Top = 128
+    Width = 89
+    Height = 17
+    Caption = 'K current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 18
+  end
+  object CheckBox14: TCheckBox
+    Left = 544
+    Top = 104
+    Width = 97
+    Height = 17
+    Caption = 'H current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 19
+  end
+  object CheckBox15: TCheckBox
+    Left = 544
+    Top = 80
+    Width = 97
+    Height = 17
+    Caption = 'Ka current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 20
+  end
+  object CheckBox16: TCheckBox
+    Left = 544
+    Top = 128
+    Width = 89
+    Height = 17
+    Caption = 'K current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 21
+  end
+  object CheckBox6: TCheckBox
+    Left = 360
+    Top = 480
+    Width = 153
+    Height = 17
+    Caption = 'neuron frequency'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 22
+  end
+  object Button2: TButton
+    Left = 641
+    Top = 697
+    Width = 61
+    Height = 24
+    Caption = 'RUN'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 23
+    OnClick = Button1Click
+  end
+  object CheckBox9: TCheckBox
+    Left = 360
+    Top = 504
+    Width = 161
+    Height = 17
+    Caption = 'population frequency'
+    Checked = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 24
+  end
+  object Chart2: TChart
+    Left = 722
+    Top = 197
+    Width = 313
+    Height = 121
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'w approximation')
+    BottomAxis.AxisValuesFormat = '#,##0,###'
+    BottomAxis.Title.Caption = 'ms'
+    BottomAxis.Title.Font.Charset = DEFAULT_CHARSET
+    BottomAxis.Title.Font.Color = clBlack
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Arial'
+    BottomAxis.Title.Font.Style = [fsBold]
+    Legend.Visible = False
+    View3D = False
+    TabOrder = 25
+    Visible = False
+    object LineSeries1: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loNone
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series9: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clGreen
+      Title = 't_inf'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object SpinEdit7: TSpinEdit
+    Left = 826
+    Top = 96
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 26
+    Value = 374
+    Visible = False
+  end
+  object SpinEdit8: TSpinEdit
+    Left = 962
+    Top = 96
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 27
+    Value = 591
+    Visible = False
+  end
+  object CheckBox17: TCheckBox
+    Left = 808
+    Top = 16
+    Width = 217
+    Height = 17
+    Caption = 'second approximation for M'
+    Checked = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 28
+    Visible = False
+  end
+  object CheckBox18: TCheckBox
+    Left = 808
+    Top = 64
+    Width = 137
+    Height = 17
+    Caption = 'frequency/delta'
+    Checked = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 29
+    Visible = False
+  end
+  object SpinEdit9: TSpinEdit
+    Left = 962
+    Top = 128
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 30
+    Value = 30
+    Visible = False
+  end
+  object CheckBox19: TCheckBox
+    Left = 808
+    Top = 40
+    Width = 225
+    Height = 17
+    Caption = 'second approximation for AHP'
+    Checked = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 31
+    Visible = False
+  end
+  object SpinEdit11: TSpinEdit
+    Left = 826
+    Top = 128
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 32
+    Value = 10
+    Visible = False
+  end
+  object SpinEdit14: TSpinEdit
+    Left = 466
+    Top = 206
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 33
+    Value = 0
+  end
+  object CheckBox20: TCheckBox
+    Left = 360
+    Top = 432
+    Width = 57
+    Height = 17
+    Caption = 'A(U)'
+    Checked = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 34
+  end
+  object CheckBox21: TCheckBox
+    Left = 360
+    Top = 456
+    Width = 97
+    Height = 17
+    Caption = 'B(U,dU/dt)'
+    Checked = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 35
+  end
+  object SpinEdit15: TSpinEdit
+    Left = 466
+    Top = 234
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 36
+    Value = 150
+  end
+  object SpinEdit16: TSpinEdit
+    Left = 466
+    Top = 293
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 37
+    Value = 275
+  end
+  object ListBox1: TListBox
+    Left = 552
+    Top = 384
+    Width = 145
+    Height = 89
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ItemHeight = 16
+    Items.Strings = (
+      'step current'
+      'colored noise (file)'
+      'white modulation'
+      'colored modulation'
+      'colored noise (file 2)')
+    ParentFont = False
+    TabOrder = 38
+  end
+  object CheckBox22: TCheckBox
+    Left = 399
+    Top = 536
+    Width = 57
+    Height = 16
+    Caption = 'RD'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 39
+  end
+  object CheckBox23: TCheckBox
+    Left = 399
+    Top = 560
+    Width = 66
+    Height = 17
+    Caption = 'RD+M'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 40
+  end
+  object CheckBox24: TCheckBox
+    Left = 399
+    Top = 584
+    Width = 90
+    Height = 17
+    Caption = 'RD+AHP'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 41
+  end
+  object CheckBox25: TCheckBox
+    Left = 399
+    Top = 608
+    Width = 106
+    Height = 17
+    Caption = 'RD+AHP+M'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 42
+  end
+  object CheckBox26: TCheckBox
+    Left = 399
+    Top = 632
+    Width = 82
+    Height = 17
+    Caption = 'Neurons'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 43
+  end
+  object CheckBox10: TCheckBox
+    Left = 400
+    Top = 712
+    Width = 97
+    Height = 17
+    Caption = 'w & n show'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 44
+    OnClick = CheckBox10Click
+  end
+  object CheckBox7: TCheckBox
+    Left = 400
+    Top = 688
+    Width = 137
+    Height = 17
+    Caption = 'Steady solutions'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 45
+    OnClick = CheckBox7Click
+  end
+  object CheckBox27: TCheckBox
+    Left = 360
+    Top = 32
+    Width = 97
+    Height = 17
+    Caption = 'KD current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 46
+  end
+  object CheckBox28: TCheckBox
+    Left = 544
+    Top = 32
+    Width = 97
+    Height = 17
+    Caption = 'KD current'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 47
+  end
+  object SpinEdit17: TSpinEdit
+    Left = 538
+    Top = 234
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 48
+    Value = 150
+  end
+  object SpinEdit18: TSpinEdit
+    Left = 538
+    Top = 264
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 49
+    Value = 0
+  end
+  object SpinEdit19: TSpinEdit
+    Left = 538
+    Top = 293
+    Width = 53
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 50
+    Value = 275
+  end
+  object Chart3: TChart
+    Left = 724
+    Top = 458
+    Width = 313
+    Height = 120
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'n approximation')
+    BottomAxis.AxisValuesFormat = '#,##0,###'
+    BottomAxis.Title.Caption = 'ms'
+    BottomAxis.Title.Font.Charset = DEFAULT_CHARSET
+    BottomAxis.Title.Font.Color = clBlack
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Arial'
+    BottomAxis.Title.Font.Style = [fsBold]
+    Legend.Visible = False
+    View3D = False
+    TabOrder = 51
+    Visible = False
+    object LineSeries2: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loNone
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object LineSeries3: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clGreen
+      Title = 't_inf'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object Chart4: TChart
+    Left = 724
+    Top = 589
+    Width = 313
+    Height = 121
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Tahoma'
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'n Lyle')
+    BottomAxis.AxisValuesFormat = '#,##0,###'
+    BottomAxis.Title.Caption = 'ms'
+    BottomAxis.Title.Font.Charset = DEFAULT_CHARSET
+    BottomAxis.Title.Font.Color = clBlack
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Arial'
+    BottomAxis.Title.Font.Style = [fsBold]
+    Legend.Visible = False
+    View3D = False
+    TabOrder = 52
+    Visible = False
+    object LineSeries6: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loNone
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object LineSeries7: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clGreen
+      Title = 't_inf'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object SpinEdit12: TSpinEdit
+    Left = 652
+    Top = 608
+    Width = 52
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 53
+    Value = 10
+  end
+  object CheckBox31: TCheckBox
+    Left = 552
+    Top = 360
+    Width = 137
+    Height = 17
+    Caption = 'sin/step'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 54
+  end
+  object SpinEdit21: TSpinEdit
+    Left = 652
+    Top = 576
+    Width = 52
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    MaxValue = 0
+    MinValue = 0
+    ParentFont = False
+    TabOrder = 55
+    Value = 3
+  end
+  object DDSpinEdit1: TDDSpinEdit
+    Left = 656
+    Top = 544
+    Width = 49
+    Height = 22
+    StrWidth = 2
+    StrDecimals = 2
+    Increment = 0.010000000000000000
+    TabOrder = 56
+    Value = 0.500000000000000000
+  end
+  object DDSpinEdit2: TDDSpinEdit
+    Left = 656
+    Top = 480
+    Width = 49
+    Height = 22
+    StrWidth = 2
+    StrDecimals = 2
+    Increment = 0.100000000000000000
+    TabOrder = 57
+    Value = 5.000000000000000000
+  end
+  object DDSpinEdit3: TDDSpinEdit
+    Left = 464
+    Top = 328
+    Width = 57
+    Height = 22
+    StrWidth = 2
+    StrDecimals = 2
+    Increment = 0.100000000000000000
+    TabOrder = 58
+    Value = 11.600000000000000000
+  end
+  object DDSpinEdit4: TDDSpinEdit
+    Left = 536
+    Top = 208
+    Width = 57
+    Height = 22
+    StrWidth = 2
+    StrDecimals = 2
+    Increment = 0.010000000000000000
+    TabOrder = 59
+    Value = -65.000000000000000000
+  end
+  object DDSpinEdit5: TDDSpinEdit
+    Left = 464
+    Top = 360
+    Width = 57
+    Height = 22
+    StrWidth = 2
+    StrDecimals = 2
+    Increment = 0.100000000000000000
+    TabOrder = 60
+    Value = 1.000000000000000000
+  end
+end

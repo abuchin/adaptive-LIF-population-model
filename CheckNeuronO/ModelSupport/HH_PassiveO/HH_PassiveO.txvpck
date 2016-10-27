@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="rh6ul7g0k_v">
+    <property name="$name" value="HH_PassiveO" />
+    <property name="$defaultDiagram" value="True" />
+    <property name="$metaclass" value="Package Diagram" />
+  </view>
+</nodeSet>
